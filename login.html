@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sauver les Tortues - Se connecter</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js"></script>
+        <script src="login.js"></script>
+    </head>
+    <body>
+
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="logo-tortue.webp" alt="Logo Tortue" width="100">
+                </div>
+            
+                <ul class="nav-links">
+                    <li><a href="accueil.html">ACCUEIL</a></li>
+                    <li><a href="signal_formulaire.html">FORMULAIRE <br> SIGNALEMENT</a></li>
+                    <li><a href="signalements.html">LES <br> SIGNALEMENTS</a></li>
+                    <li><a href="login.html"class="active">SE CONNECTER <br> / CRÉER UN COMPTE</a></li>
+                    <li><a href="apropos.html">À PROPOS <br> DE NOUS</a></li>
+                </ul>
+            </nav>
+            <hr class="separator">
+        </header>
+
+        <main class="container">
+            <h1>Espace Connexion</h1>
+            <form id="form-login" class="form-container">
+                <div class="form-group">
+                    <label for="phone">Numéro de téléphone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mdp">Mot de passe</label>
+                    <input type="password" id="mdp" name="password" required>
+                </div>
+
+                <div id="confirm-div" class="form-group" style="display: none;">
+                    <label for="mdp2">Confirmer le mot de passe</label>
+                    <input type="password" id="mdp2">
+                </div>
+
+                <button type="button" class="main-button">SE CONNECTER</button>
+    
+                <div id="registration-link" class="form-footer"></div>
+            </form>
+            <hr class="separator">
+
+            <section class="eco-info">
+                <p>CE SITE EST ÉCO-CONÇU : PAS D'IMAGES LOURDES, PEU DE CODE, POUR SAUVER LES TORTUES SANS POLLUER LA PLANÈTE</p>
+            </section>
+        </main>
+        <footer class="site-footer"> 
+            <p>Chloé & Ivana & Guilio & Henri</p>
+            <p>EFREI PARIS - PROJET NUMÉRIQUE DURABLE - S6 - 2026</p> 
+        </footer>
+
+    </body>
+</html>

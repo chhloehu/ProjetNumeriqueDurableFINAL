@@ -1,0 +1,228 @@
+/* STYLES GLOBAUX & RESET */
+html, body {
+    height: 100%; /* Nécessaire pour coller le footer en bas */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FAF3EF; /* Beige clair */
+    color: #003366; /* Bleu foncé */
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Structure verticale */
+}
+
+/* STRUCTURE */
+.container {
+    flex: 1;
+    padding: 20px 10% 50px 10%; 
+}
+
+.separator {
+    border: none;
+    border-top: 2px solid #5BC0DE;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* HEADER & NAVIGATION */
+header {
+    padding: 20px 5% 0 5%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;    /* Alignement vertical logo/texte */
+    justify-content: center; /* Centrage horizontal de l'ensemble */
+    gap: 40px;
+    flex-wrap: wrap;        /* Permet au menu de passer sous le logo si besoin */
+}
+
+.logo img {
+    display: block;
+    width: 80px; /* Taille maîtrisée pour l'éco-conception */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #1A458B;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+/* État Actif (Bouton Rouge) */
+.nav-links li a.active {
+    background-color: #FF0000;
+    color: white !important;
+    padding: 10px 25px;
+    border-radius: 50px;
+}
+/* Survol des liens de la navigation */
+.nav-links li a:hover {
+    color: #FF0000; /* Le texte devient rouge au survol */
+    transition: color 0.3s ease;
+}
+
+/* Survol du bouton rouge actif */
+.nav-links li a.active:hover {
+    background-color: #CC0000; /* Devient un peu plus foncé au survol */
+    color: white;
+}
+
+/* COMPOSANTS (Boutons, Formulaire et Infos) */
+.hero {
+    margin: 40px 0;
+}
+
+h1 {
+    color: #1A458B;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+/* Styles du formulaire */
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left; /* Alignement à gauche pour la lisibilité */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #003366;
+}
+
+.form-group input {
+    padding: 12px;
+    border: 2px solid #5BC0DE;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 1rem;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+/* Style commun pour les boutons principaux */
+.main-button {
+    display: inline-block;
+    background-color: #C4C4C4; /* Gris sobre */
+    color: #1A458B;
+    padding: 20px 40px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.3;
+    transition: transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+    width: auto;
+}
+
+/* Adaptation spécifique pour le bouton central de l'accueil */
+.hero .main-button {
+    padding: 40px 60px;
+    font-size: 1.5rem;
+}
+
+.main-button:hover {
+    transform: scale(1.05);
+}
+
+.eco-info {
+    margin: 40px auto;
+    font-weight: 800;
+    font-size: 1.1rem;
+    max-width: 800px;
+    line-height: 1.4;
+    color: #1A458B;
+}
+
+/* FOOTER */
+.site-footer {
+    background-color: #003366; 
+    color: #FAF3EF; 
+    padding: 25px 0;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+/* RESPONSIVE (Adaptation Mobile) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        gap: 15px;
+        padding: 10px 2%;
+    }
+
+    .nav-links {
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-links li a {
+        font-size: 0.75rem;
+        padding: 8px 12px;
+    }
+
+    .main-button {
+        font-size: 1.1rem;
+        padding: 25px 30px;
+        width: 100%; /* Bouton pleine largeur sur mobile */
+        box-sizing: border-box;
+    }
+    
+    .form-container {
+        width: 100%;
+    }
+}
+
+/* Style pour la page À propos */
+.presentation-text {
+    max-width: 800px; /* Limite la largeur pour une meilleure lecture */
+    margin: 0 auto;   /* Centre le bloc de texte */
+    text-align: justify;
+    line-height: 1.6; /* Améliore le confort de lecture (accessibilité) */
+}
+
+.presentation-text h1 {
+    text-align: center;
+    margin-top: 0; 
+    margin-bottom: 20px;
+}
+
+.presentation-text p {
+    margin-bottom: 1.5rem;
+}

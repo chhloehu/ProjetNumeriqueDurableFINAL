@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sauver les Tortues - Signalement</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="app.js" defer></script>
+        <script src="signalement.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <img src="logo-tortue.webp" alt="Logo Tortue" width="80">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="accueil.html">ACCUEIL</a></li>
+                    <li><a href="signal_formulaire.html" class="active">FORMULAIRE <br> SIGNALEMENT</a></li>
+                    <li><a href="signalements.html">LES <br> SIGNALEMENTS</a></li>
+                    <li><a href="login.html">SE CONNECTER <br> / CRÉER UN COMPTE</a></li>
+                    <li><a href="apropos.html">À PROPOS <br> DE NOUS</a></li>
+                </ul>
+            </nav>
+            <hr class="separator">
+        </header>
+
+        <main class="container">
+            <h1>Formulaire de Signalement</h1>
+        
+            <form id="form-signalement" class="form-container">
+                <div class="form-group">
+                    <label for="Location">Lieu de l'observation</label>
+                    <input type="text" id="Location" name="location" placeholder="Ex: Plage de Sainte-Anne" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Obj">Objet du signalement</label>
+                    <input type="text" id="Obj" name="object" placeholder="Ex: Tortue blessée" required>
+                </div>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" id="Urgency" name="urgency">
+                    <label for="Urgency">Ce signalement est urgent</label>
+                </div>
+
+                <button type="submit" class="main-button btn-submit">
+                    Confirmer et envoyer mon signalement
+                </button>
+            </form>
+            
+            <hr class="separator">
+
+            <section class="eco-info">
+                <p>CE SITE EST ÉCO-CONÇU : PAS D'IMAGES LOURDES, PEU DE CODE, POUR SAUVER LES TORTUES SANS POLLUER LA PLANÈTE</p>
+            </section>
+        </main>
+
+        <footer class="site-footer"> 
+            <p>Chloé & Ivana & Guilio & Henri</p>
+            <p>EFREI PARIS - PROJET NUMÉRIQUE DURABLE - S6 - 2026</p> 
+        </footer>
+    </body>
+</html>
