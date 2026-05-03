@@ -23,6 +23,16 @@ Le site est accessible en ligne ici : https://projet-numerique-durable-s6-efrei.
 
 ---
 
+## Comment faire tourner notre code en local ? 
+dans le terminal, quand vous ouvrez sur VsCode par exemple : 
+1. cd ProjetNumeriqueDurableFINAL
+2. npm install
+3. npm start
+
+Le site sera ensuite accessible en local à l’adresse : http://localhost:3000 
+
+--- 
+
 ## Membres de l’équipe
 
 | Membre | Rôle principal |
